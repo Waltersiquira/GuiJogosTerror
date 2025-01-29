@@ -23,7 +23,7 @@
         } else {
             while ($reg=$busca->fetch_object()){
                 $preço = number_format($reg->preço, 2, ',', '.');
-                echo "<img src='$reg->imagem' width='300'> <h3>$reg->nome</h3> <h4>R$$preço</h4> <hr> <p>$reg->descrição</p> <button style='background-color: blue;'><a href='comprar-jogo-terror.php?i=$reg->id' style='color: white; text-decoration: none;'>Comprar</a></button> <br>";
+                echo "<img src='$reg->imagem' width='300'> <h3>$reg->nome</h3> <h4>R$$preço</h4> Vendas: $reg->vendas <hr> <p>$reg->descrição</p> <button style='background-color: blue;'><a href='comprar-jogo-terror.php?i=$reg->id' style='color: white; text-decoration: none;'>Comprar</a></button> <br>";
             }
         }
     }
