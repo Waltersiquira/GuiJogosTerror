@@ -25,7 +25,7 @@
                 echo 'Existe nenhum jogo de terror no momento';
             } else {
                 while ($reg=$busca->fetch_object()){
-                    echo "<tr><td><a href='pagina-jogo-terror.php?i=$reg->id'><img src='$reg->imagem'></a></td><td>$reg->nome</td><td><a href='deletar-jogo-terror.php?i=$reg->id' style='color: black;'><span class='material-symbols-outlined'>delete</span></a></td></tr>";
+                    echo "<tr><td><a href='pagina-jogo-terror.php?i=$reg->id'><img src='$reg->imagem' width='300'></a></td><td>$reg->nome</td><td><a href='deletar-jogo-terror.php?i=$reg->id' style='color: black;'><span class='material-symbols-outlined'>delete</span></a></td></tr>";
                 }
             }
         }
